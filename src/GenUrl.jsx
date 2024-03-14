@@ -5,11 +5,11 @@ const GenUrl = ({setGen, shortLink,setShortLink,longLink,setLonglink, setAllgenl
 
 const generate=async()=>{
     try {
-        
-        // const data= await axios.post(serverApi, link);
-        setShortLink("google.com");
+        const serverApi="";
+        const data= await axios.post(serverApi, longLink);
+        setShortLink(data.data);
         setAllgenlinks((prev)=>{
-            const cur={longLink, shortLink:data.data.link};
+            const cur={longLink, shortLink:data.data};
             return [...prev, cur];
         })
         setLonglink("");
