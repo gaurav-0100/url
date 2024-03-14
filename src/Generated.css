@@ -1,0 +1,26 @@
+.generate-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .shortLink {
+    flex: 1; /* Take remaining space */
+    padding: 8px; /* Adjust padding as needed */
+    margin-right: 10px; /* Adjust margin as needed */
+    border: 1px solid #ccc; /* Adjust border as needed */
+    border-radius: 5px; /* Adjust border radius as needed */
+  }
+  
+  .generate {
+    padding: 8px 12px; /* Adjust padding as needed */
+    background-color: #007bff; /* Adjust background color as needed */
+    color: #fff; /* Adjust text color as needed */
+    border: none;
+    border-radius: 5px; /* Adjust border radius as needed */
+    cursor: pointer;
+  }
+  
+  .generate:hover {
+    background-color: #0056b3; /* Adjust hover background color as needed */
+  }
+  

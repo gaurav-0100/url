@@ -15,17 +15,17 @@ function App() {
   const [shortLink, setShortLink]= useState("");
   const [allgenlinks, setAllgenlinks]= useState([]);
   return (
-    <>
+    <div className='container'>
       <div className="url-tag">
         Url Shortner
       </div>
       {gen?<Generated shortLink={shortLink} setShortLink={setShortLink}  setGen={setGen}/>: 
       <GenUrl longLink={longLink} shortLink={shortLink} setLonglink={setLonglink}setGen={setGen} setShortLink={setShortLink} setAllgenlinks={setAllgenlinks}/>}
-      <div>
+      <div className='generated-urls'>
         {allgenlinks.map((item, index)=><UrlCard key={index}longLink={item.longLink} shortLink={item.shortLink}/>)} 
       </div>
       
-    </>
+    </div>
   )
 }
 

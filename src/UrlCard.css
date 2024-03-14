@@ -1,0 +1,22 @@
+.url-card {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Adjust border as needed */
+    border-radius: 5px; /* Adjust border radius as needed */
+    background-color: #f9f9f9; /* Adjust background color as needed */
+    width: calc(50% - 20px); /* Adjust width as needed */
+    max-width: 300px; /* Adjust max-width as needed */
+  }
+  
+  /* Style for long link */
+  .url-card .long-link {
+    font-size: 14px; /* Adjust font size as needed */
+    color: #666; /* Adjust color as needed */
+  }
+  
+  /* Style for short link */
+  .url-card .short-link {
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: bold; /* Adjust font weight as needed */
+    color: #333; /* Adjust color as needed */
+  }
